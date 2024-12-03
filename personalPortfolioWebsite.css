@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gadugi;
+}
+#container{
+    height: 100vh;
+    width: 100%;
+    background-color: #c775f3;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+#container1{
+    height: 100%;
+    width: 100%;
+    background-color: #c775f3;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+#portfolio{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F7FA;
+    border-radius: 10px;
+}
+#navSection{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#navSection ul{
+    display: flex;
+    list-style-type: none;
+}
+#container2{
+    height: 100%;
+    width: 100%;
+    background-color: #c775f3;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+li{
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    color: #862ece;
+}
+#navSection ul li{
+    margin: 20px;
+}
+#introSection{
+    height: 80%;
+    width: 100%;
+    display: flex;
+}
+#section1{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 50px;
+    justify-content: space-evenly;
+}
+#section2{
+    height: 100%;
+    width: 30%;
+}
+#circle::before{
+    content: "";
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 15px;
+    left: 15px;
+    border-radius: 50%;
+    background: white;
+}
+#circle{
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    background: linear-gradient(#862ece,#e6347e);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#picture{
+    object-fit: cover;
+    height: 85%;
+    position: absolute;
+}
+#themeDL{
+    height: 50%;
+    width: 10%;
+    display: flex;
+}
+#theme1{
+    height: 8vh;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    background: linear-gradient(45deg,#862ece,#e6347e);
+}
+#theme2{
+    height: 8vh;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    background: linear-gradient(45deg,#862ece,#e6347e);
+}
+h3{
+    color: #862ece;
+}
+button{
+    font-size: 1.1em;
+    color: white;
+    cursor: pointer;
+}
+#container3{
+    height: 100%;
+    width: 100%;
+    background-color: #c775f3;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+#about{
+    height: 64.2vh;
+    width: 100%;
+    background-color: #F1F7FA;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    color: darkblue;
+}
+#about table{
+    height: 100%;
+    width: 50%;
+}
+#aboutMyself{
+    height: 100%;
+    width: 50%;
+    padding: 10px;
+    border-left: 2px solid grey;
+}
+#aboutMe{
+    text-align: justify;
+    line-height: 30px;
+}
+#textColor{
+    color: darkblue;
+}
+a{
+    text-decoration: none;
+}
+.backTo{
+    height: 8vh;
+    width: 14vw;
+    border-radius: 5px;
+    background: linear-gradient(45deg,#862ece,#e6347e);
+    outline: none;
+    border: none;
+}
+#skill{
+    height: 64.3vh;
+    width: 100%;
+    background-color: #F1F7FA;
+    border-radius: 5px;
+    display: flex;  
+    padding: 20px;
+}
+#skillDiv{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: darkblue;
+}
+#skillDiv p{
+    text-indent: 25px;
+    margin: 4px;
+}
+#skillPic{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: darkblue;
+    padding-left: 20px;
+    border-left: 1px solid grey;
+}
+.skillLogo{
+    height: 20vh;
+    width: 10vw;
+    border-radius: 50%;
+}
+#project{
+    height: 64.2vh;;
+    width: 100%;
+    background-color: #F1F7FA;
+    border-radius: 5px;
+    display: flex;
+    padding: 20px;
+    color: darkblue;
+}
+#project1{
+    height: 100%;
+    width: 75%;
+    background-color: #F1F7FA;
+    border-left: 2px solid grey;
+    display: flex;
+    padding-left: 20px;
+    color: darkblue;
+}
+@media screen and (max-width: 768px) {
+    #introSection {
+        flex-direction: column;
+    }
+    #about table{
+        width: 50%;
+    }
+    #about{
+        height: 85%;
+        display: flex;
+        font-size: 12px;
+        flex-direction: column;
+    }
+    #aboutMe{
+        line-height: 20px;
+    }
+    #section1 {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #section2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    #circle {
+        height: 10%;
+        position: absolute;
+        bottom: 81%;
+        left: 10%;
+        width: 13%;
+    }
+
+    #picture {
+        height: 90%;
+    }
+
+    #navSection ul {
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: 17%;
+    }
+
+    #navSection ul li {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    #skillPic {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skillLogo {
+        height: 15vh;
+        width: 25vw;
+        margin: 10px;
+    }
+
+    #aboutMyself, #about table {
+        width: 100%;
+    }
+
+    #aboutMyself {
+        padding: 20px;
+        border-left: none;
+    }
+
+    button {
+        width: 60%;
+        margin: 10px auto;
+    }
+    #navSection h2{
+        margin-left: 65px;
+    }
+    #skillDiv{
+        font-size: 12px;
+    }
+    #skillPic img{
+        height: 27%;
+        width: 38%;
+    }
+    .marginhp{
+        margin: 22px;
+    }
+    #project table{
+        font-size: 13px;
+    }
+    #project1 table{
+        font-size: 13px;
+    }
+    #project table tr th,td{
+        display: flex;
+        margin: 10px;
+        flex-direction: column;
+    }
+    #project{
+        height: 100vh;
+    }
+}
+
+/* Small Mobile View */
+@media screen and (max-width: 480px) {
+    .skillLogo {
+        height: 10vh;
+        width: 30vw;
+    }
+    .marginhp{
+        margin: 22px;
+    }
+    #section1 p{
+        text-align: justify;
+    }
+    button {
+        width: 80%;
+    }
+    #projectvisible{
+        z-index: 1000;
+    }
+    #themeDL {
+        width: 24%;
+    }
+    #skillPic img{
+        height: 19%;
+        width: 51%;
+    }
+}
